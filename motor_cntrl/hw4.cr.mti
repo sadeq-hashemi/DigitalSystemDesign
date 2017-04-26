@@ -1,0 +1,29 @@
+I:/ece551/homework/hw4/motor_cntrl.v {1 {vlog -work work -vopt -stats=none I:/ece551/homework/hw4/motor_cntrl.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module motor_cntrl
+
+Top level modules:
+	motor_cntrl
+
+} {} {}} I:/ece551/exercises/ex6/pwm.v {1 {vlog -work work -vopt -stats=none I:/ece551/exercises/ex6/pwm.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pwm
+
+Top level modules:
+	pwm
+
+} {} {}} I:/ece551/homework/hw4/motor_cntrl_tb.v {1 {vlog -work work -vopt -stats=none I:/ece551/homework/hw4/motor_cntrl_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module motor_cntrl_tb
+
+Top level modules:
+	motor_cntrl_tb
+
+} {} {}} I:/ece551/exercises/ex6/pwm_tb.v {1 {vlog -work work -vopt -stats=none I:/ece551/exercises/ex6/pwm_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pwm_tb
+
+Top level modules:
+	pwm_tb
+
+} {} {}}
