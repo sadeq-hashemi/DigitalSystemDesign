@@ -1,0 +1,22 @@
+{D:/SchoolWork/Semester 4/ECE551/HW4/barcode_tb.v} {1 {vlog -work work -stats=none {D:/SchoolWork/Semester 4/ECE551/HW4/barcode_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module barcode_tb
+
+Top level modules:
+	barcode_tb
+
+} {} {}} {D:/SchoolWork/Semester 4/ECE551/HW4/barcode_mimic.sv} {1 {vlog -work work -sv -stats=none {D:/SchoolWork/Semester 4/ECE551/HW4/barcode_mimic.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module barcode_mimic
+
+Top level modules:
+	barcode_mimic
+
+} {} {}} {D:/SchoolWork/Semester 4/ECE551/HW4/barcode.sv} {1 {vlog -work work -sv -stats=none {D:/SchoolWork/Semester 4/ECE551/HW4/barcode.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module barcode
+
+Top level modules:
+	barcode
+
+} {} {}}
