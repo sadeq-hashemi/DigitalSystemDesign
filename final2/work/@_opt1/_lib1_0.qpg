@@ -1,0 +1,438 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dI:/ece551/FinalProject
+T_opt
+!s110 1493299676
+Vh7lQ]P6Y[5fjbFWUjDFkX3
+04 11 4 work Follower_tb fast 0
+=1-a0d3c10bf468-5901f1da-e-1d5c
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OE;O;10.3c;59
+R0
+T_opt1
+!s110 1493306856
+Vg_X^=8Mf2I<EnooZAKjYP1
+04 10 4 work barcode_tb fast 0
+=1-a0d3c10bf468-59020de7-19c-1d9c
+R1
+n@_opt1
+R2
+T_opt2
+!s110 1493306545
+Vc^kOUgCz5l;B^;lJl7`RP0
+04 14 4 work cmd_barcode_tb fast 0
+=8-a0d3c10bf468-59020cb0-179-1cb8
+R1
+n@_opt2
+R2
+R0
+vA2D_intf
+Z3 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z4 !s110 1493306530
+!i10b 1
+!s100 FnfAjPm[D?2FFWfU[>?kQ1
+IN`daXjhkYdTCfgcQ[96@]1
+Z5 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 A2D_intf_sv_unit
+S1
+Z6 dI:/ece551/FinalProject/final2
+Z7 w1493239724
+8I:/ece551/FinalProject/final2/A2D_intf.sv
+FI:/ece551/FinalProject/final2/A2D_intf.sv
+L0 1
+Z8 OE;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1493306530.212000
+!s107 I:/ece551/FinalProject/final2/A2D_intf.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/FinalProject/final2/A2D_intf.sv|
+!i113 0
+Z9 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@a2@d_intf
+vADC128S
+R3
+R4
+!i10b 1
+!s100 XU96@dY^R:_hTXUPK0hIE1
+IOMlk=;iLMI4B1T5TA6>j`0
+R5
+!s105 ADC128S_sv_unit
+S1
+R6
+w1491921233
+8I:/ece551/FinalProject/final2/ADC128S.sv
+FI:/ece551/FinalProject/final2/ADC128S.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306530.651000
+!s107 I:/ece551/FinalProject/final2/ADC128S.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/FinalProject/final2/ADC128S.sv|
+!i113 0
+R9
+n@a@d@c128@s
+valu
+Z10 !s110 1493306531
+!i10b 1
+!s100 l_:`R2LD5lL5DF0`JOWHm1
+I:Y;djh65SRCOA[R27jGBb0
+R5
+R6
+R7
+8I:/ece551/FinalProject/final2/alu.v
+FI:/ece551/FinalProject/final2/alu.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306531.104000
+!s107 I:/ece551/FinalProject/final2/alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/FinalProject/final2/alu.v|
+!i113 0
+Z11 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vbarcode
+R3
+R10
+!i10b 1
+!s100 2M8Vf`9@869XVK]DGF_C[0
+IWfLKkiHbYiZCGM5nhjn=A3
+R5
+!s105 barcode_sv_unit
+S1
+R6
+w1493306525
+8I:/ece551/FinalProject/final2/barcode.sv
+FI:/ece551/FinalProject/final2/barcode.sv
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1493306531.646000
+!s107 I:/ece551/FinalProject/final2/barcode.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/FinalProject/final2/barcode.sv|
+!i113 0
+R9
+vbarcode_mimic
+R3
+Z12 !s110 1493306532
+!i10b 1
+!s100 [aFEc88kneOkV?GMk4H<<2
+I]cVza1b<O_2@=72=8Z8ii3
+R5
+!s105 barcode_mimic_sv_unit
+S1
+R6
+R7
+8I:/ece551/FinalProject/final2/barcode_mimic.sv
+FI:/ece551/FinalProject/final2/barcode_mimic.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306532.034000
+!s107 I:/ece551/FinalProject/final2/barcode_mimic.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/FinalProject/final2/barcode_mimic.sv|
+!i113 0
+R9
+vbarcode_tb
+Z13 !s110 1493306540
+!i10b 1
+!s100 ?D<zj>Y_fm`Y4;HEVXkPl1
+ILNm2ehJKilZ?gK55Mf40g3
+R5
+R6
+w1493305899
+8I:/ece551/FinalProject/final2/barcode_tb.v
+FI:/ece551/FinalProject/final2/barcode_tb.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1493306540.011000
+!s107 I:/ece551/FinalProject/final2/barcode_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/FinalProject/final2/barcode_tb.v|
+!i113 0
+R11
+vbuzz_counter
+R12
+!i10b 1
+!s100 ]`Sgj?z:769LiYji_ODmc2
+IVaNimE4l^UDSEo3BoeRRT3
+R5
+R6
+w1493247190
+8I:/ece551/FinalProject/final2/buzz_cntr.v
+FI:/ece551/FinalProject/final2/buzz_cntr.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306532.516000
+!s107 I:/ece551/FinalProject/final2/buzz_cntr.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/FinalProject/final2/buzz_cntr.v|
+!i113 0
+R11
+vcmd_barcode_tb
+R13
+!i10b 1
+!s100 T]nDWHD65H8g9ET0N]^fj2
+I7N@GQ]zY]9@l]cPnM676J1
+R5
+R6
+w1493306022
+8I:/ece551/FinalProject/final2/cmd_barcode_tb.v
+FI:/ece551/FinalProject/final2/cmd_barcode_tb.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1493306540.342000
+!s107 I:/ece551/FinalProject/final2/cmd_barcode_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/FinalProject/final2/cmd_barcode_tb.v|
+!i113 0
+R11
+vcmd_cntrl
+R3
+R12
+!i10b 1
+!s100 _2iHiF6Be:E9QJS2RdWb]0
+ISG99:lh6F34aYc@OD4?Rh0
+R5
+!s105 cmd_contrl_sv_unit
+S1
+R6
+w1493247552
+8I:/ece551/FinalProject/final2/cmd_contrl.sv
+FI:/ece551/FinalProject/final2/cmd_contrl.sv
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1493306532.860000
+!s107 I:/ece551/FinalProject/final2/cmd_contrl.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/FinalProject/final2/cmd_contrl.sv|
+!i113 0
+R9
+vcounter_8
+Z14 !s110 1493306533
+!i10b 1
+!s100 UH:bFcR>I2L?3C0;:M5kL0
+I1=L6V_?NH47]Lf9?A:Sm92
+R5
+R6
+R7
+8I:/ece551/FinalProject/final2/counter_8.v
+FI:/ece551/FinalProject/final2/counter_8.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306533.306000
+!s107 I:/ece551/FinalProject/final2/counter_8.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/FinalProject/final2/counter_8.v|
+!i113 0
+R11
+vdig_core
+R3
+R14
+!i10b 1
+!s100 OVCDAX@cTQb`6ko7mlO_k0
+I@8>jLHd@fNT9KaB7<UV4S1
+R5
+!s105 dig_core_sv_unit
+S1
+R6
+w1493247194
+8I:/ece551/FinalProject/final2/dig_core.sv
+FI:/ece551/FinalProject/final2/dig_core.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306533.711000
+!s107 I:/ece551/FinalProject/final2/dig_core.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/FinalProject/final2/dig_core.sv|
+!i113 0
+R9
+vduty_meas
+Z15 !s110 1493306534
+!i10b 1
+!s100 OIVAW7b8^ThbcSU1`g@]?0
+I0IEB_D:zZZJkJJoNCe5OI1
+R5
+R6
+w1493247198
+8I:/ece551/FinalProject/final2/duty_meas.v
+FI:/ece551/FinalProject/final2/duty_meas.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306534.154000
+!s107 I:/ece551/FinalProject/final2/duty_meas.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/FinalProject/final2/duty_meas.v|
+!i113 0
+R11
+vduty_meas8
+R15
+!i10b 1
+!s100 Y<V<FDLQPaQBzc27cNzBB2
+INlKG3Obo<P:hDId8n3UV@0
+R5
+R6
+w1493247201
+8I:/ece551/FinalProject/final2/duty_meas8.v
+FI:/ece551/FinalProject/final2/duty_meas8.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306534.548000
+!s107 I:/ece551/FinalProject/final2/duty_meas8.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/FinalProject/final2/duty_meas8.v|
+!i113 0
+R11
+vFollower
+R15
+!i10b 1
+!s100 Y`GGQfSWcXf5niT<3LEQO0
+I^gOAEOP?e7nL:Z[kMKDDQ1
+R5
+R6
+w1493247210
+8I:/ece551/FinalProject/final2/follower.v
+FI:/ece551/FinalProject/final2/follower.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306534.909000
+!s107 I:/ece551/FinalProject/final2/follower.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/FinalProject/final2/follower.v|
+!i113 0
+R11
+n@follower
+vFollower_tb
+Z16 !s110 1493306535
+!i10b 1
+!s100 b[XjO[a6[G_zPHYnBnCI00
+IC9e5knh_eATTIVXe=U;3U1
+R5
+R6
+w1493248845
+Z17 8I:/ece551/FinalProject/final2/follower_tb.v
+Z18 FI:/ece551/FinalProject/final2/follower_tb.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306535.294000
+Z19 !s107 I:/ece551/FinalProject/final2/follower_tb.v|
+Z20 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/FinalProject/final2/follower_tb.v|
+!i113 0
+R11
+n@follower_tb
+vFollower_tb_2
+!s110 1493248773
+!i10b 1
+!s100 h3<2UmW4WZznh3jQOl28C3
+Iz2>SH2?h8znM@AP`jj6<52
+R5
+R6
+w1493248544
+R17
+R18
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493248773.559000
+R19
+R20
+!i113 0
+R11
+n@follower_tb_2
+vmotion_cntrl
+R3
+R16
+!i10b 1
+!s100 4`l78CY7SbIRR02ibP9_Q1
+IkW:oonSW@3ORmRNk`;_C<2
+R5
+!s105 motion_cntrl_sv_unit
+S1
+R6
+w1493248091
+8I:/ece551/FinalProject/final2/motion_cntrl.sv
+FI:/ece551/FinalProject/final2/motion_cntrl.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306535.704000
+!s107 I:/ece551/FinalProject/final2/motion_cntrl.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/FinalProject/final2/motion_cntrl.sv|
+!i113 0
+R9
+vmotor_cntrl
+Z21 !s110 1493306536
+!i10b 1
+!s100 C?m[49XVHbZW=zg;6MINR2
+IeP>6M<@>J[4?7k3=[e4R72
+R5
+R6
+R7
+8I:/ece551/FinalProject/final2/motor_cntrl.v
+FI:/ece551/FinalProject/final2/motor_cntrl.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1493306536.455000
+!s107 I:/ece551/FinalProject/final2/motor_cntrl.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/FinalProject/final2/motor_cntrl.v|
+!i113 0
+R11
+vPushbutton_detect
+R21
+!i10b 1
+!s100 ]?o<F9k0W[]mEfa9Ni]Y_0
+IHEPg:Y8O?_GV]AO@KZz=^0
+R5
+R6
+R7
+8I:/ece551/FinalProject/final2/Pushbutton_detect.v
+FI:/ece551/FinalProject/final2/Pushbutton_detect.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1493306536
