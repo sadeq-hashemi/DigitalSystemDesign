@@ -1,0 +1,137 @@
+module SPI_mstr (clk, rst_n, SS_n, SCLK, MISO, MOSI, done, rd_data, wrt, cmd);
+
+input wrt;
+input [15:0] cmd;
+input clk, rst_n;
+
+
+output reg done;
+output reg[15:0] rd_data;
+output reg SCLK, MOSI, SS_n;
+
+
+
+input MISO;
+//SM for Master 
+typedef enum reg [1:0] {IDLE, SHIFT, BACK_PORCH} state_t;
+state_t state, nxt_state;
+
+//values being shifted
+reg [15:0] shift_reg;
+
+
+
+
+//Counter for 1/32 c
+reg [4:0] SCLK_cnt;
+//Counter to shift correct number of bits
+reg [4:0] shift_cnt;
+
+//dummy cycle count
+reg dummy_cnt;
+//dummy cycle 
+reg dummy_cnt_inc;
+
+
+
+//hold command
+reg [15:0] cmd_hold;
+
+
+//SCLK stays high while SM is in BACK_PORCH
+assign SCLK = (state != BACK_PORCH) ? SCLK_cnt[4]:1'b1;
+
+//MOSI is MSB of shift_reg
+assign MOSI = shift_reg[15];
+
+
+//Shift register to hold master data
+//assign rd_data = shift_reg;
+
+//Sequential for SM
+always @ (posedge clk, negedge rst_n) begin
+	if(!rst_n)state <= IDLE;
+	else state <= nxt_state;
+end
+
+//Sequential for SCLK
+always @ (posedge clk) begin 
+	if(!SS_n) SCLK_cnt <= SCLK_cnt + 1'b1;
+	else SCLK_cnt<= 5'b10111;
+end
+
+//Sequential for shift register
+always @ (posedge clk, negedge rst_n) begin
+	if(!rst_n) begin
+		shift_reg <= 0;
+		shift_cnt = 5'h00;
+	end
+	else if(wrt) begin 
+		shift_reg <= cmd;
+		cmd_hold <= cmd;
+		shift_cnt <= 0;
+	end	
+	else if(dummy_cnt_inc) begin	
+		shift_reg <= cmd_hold;
+		shift_cnt <= 0;
+	end
+	else if(SCLK_cnt == 5'b10010) begin 
+		shift_reg <= {shift_reg[14:0], MISO};
+		shift_cnt <= shift_cnt + 1'b1;
+	end
+end
+
+always @ (posedge clk, negedge rst_n) begin
+	if(!rst_n) begin
+		dummy_cnt <= 1'b0;
+	end
+	else if(dummy_cnt_inc) begin
+		dummy_cnt <= dummy_cnt + 1'b1;
+	end
+	
+end
+
+//Combonational Logic
+always @ (*) begin
+	done = 1'b0;
+	dummy_cnt_inc = 0;
+	//DOES DONE NEED TO BE ASSERTED IN IDLE?
+	case (state)
+	IDLE :  begin
+		if(wrt || dummy_cnt) begin
+			SS_n = 1'b0;
+			nxt_state = SHIFT;
+	  	end
+		else begin
+			nxt_state = IDLE;
+			SS_n = 1'b1;
+		end
+	end
+	SHIFT : begin
+		SS_n = 1'b0;
+		if(shift_cnt[4]) begin 
+			nxt_state = BACK_PORCH;
+			done = dummy_cnt;
+			if(dummy_cnt)
+				rd_data = shift_reg;
+			dummy_cnt_inc = 1;
+		end
+		else nxt_state = SHIFT;
+	end
+	BACK_PORCH : begin
+		if(shift_cnt <= 5'h12) begin
+			nxt_state = IDLE;
+			if(dummy_cnt) SS_n = 1'b0;
+			else SS_n = 1'b1;
+	  	end else begin
+			nxt_state = BACK_PORCH;
+			SS_n = 1'b0;
+		end
+	end
+	endcase
+		  
+end
+
+
+
+endmodule

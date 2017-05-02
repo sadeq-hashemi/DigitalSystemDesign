@@ -1,0 +1,11 @@
+Info (10281): Verilog HDL Declaration information at UART_tx.v(6): object "tx" differs only in case from object "TX" in the same scope File: I:/ece551/FinalProject/UART_tx.v Line: 6
+Warning (10268): Verilog HDL information at uart_rcv_2.sv(73): always construct contains both blocking and non-blocking assignments File: I:/ece551/FinalProject/uart_rcv_2.sv Line: 73
+Info (10281): Verilog HDL Declaration information at SPI_mstr.sv(12): object "SHIFT" differs only in case from object "shift" in the same scope File: I:/ece551/FinalProject/SPI_mstr.sv Line: 12
+Info (10281): Verilog HDL Declaration information at reset_synch.v(4): object "RST_n" differs only in case from object "rst_n" in the same scope File: I:/ece551/FinalProject/reset_synch.v Line: 4
+Info (10281): Verilog HDL Declaration information at cmd_contrl.sv(11): object "go" differs only in case from object "GO" in the same scope File: I:/ece551/FinalProject/cmd_contrl.sv Line: 11
+Info (10281): Verilog HDL Declaration information at follower.v(6): object "RST_n" differs only in case from object "rst_n" in the same scope File: I:/ece551/FinalProject/follower.v Line: 6
+Info (10281): Verilog HDL Declaration information at motion_cntrl.sv(18): object "Intgrl" differs only in case from object "INTGRL" in the same scope File: I:/ece551/FinalProject/motion_cntrl.sv Line: 18
+Info (10281): Verilog HDL Declaration information at motion_cntrl.sv(18): object "Icomp" differs only in case from object "ICOMP" in the same scope File: I:/ece551/FinalProject/motion_cntrl.sv Line: 18
+Info (10281): Verilog HDL Declaration information at motion_cntrl.sv(16): object "Pcomp" differs only in case from object "PCOMP" in the same scope File: I:/ece551/FinalProject/motion_cntrl.sv Line: 16
+Info (10281): Verilog HDL Declaration information at motion_cntrl.sv(26): object "rht_reg" differs only in case from object "RHT_REG" in the same scope File: I:/ece551/FinalProject/motion_cntrl.sv Line: 26
+Info (10281): Verilog HDL Declaration information at motion_cntrl.sv(26): object "lft_reg" differs only in case from object "LFT_REG" in the same scope File: I:/ece551/FinalProject/motion_cntrl.sv Line: 26
