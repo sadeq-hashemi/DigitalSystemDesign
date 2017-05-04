@@ -1,0 +1,48 @@
+# Exercise 12
+# Synthesis Script
+# Tristen Hallock, Sadeq Hashemi Nejad, Skylar Yan, Casey Loyda
+
+# Read in verilog files #
+######################################################################################
+read_file -format sverilog { ./uart_rcv_2.sv ./A2D_intf.sv ./barcode.sv }
+read_file -format verilog { ./motor_cntrl.v }
+read_file -format verilog { ./follower.v }
+
+# Set current Design to top level #
+######################################################################################
+set current_design follower
+
+
+# CONSTRAINTS
+######################################################################################
+# 1) clock frequecy = 400MHz ie period = 2.5ns
+create_clock -name "clk" -period 2.5 -waveform {0 1} {clk}
+ 
+# 2) Input Delay = 0.5ns after clock rise for all inputs
+set prim_inputs [remove_from_collection [all_inputs] \ [find port clk]]
+set_input_delay –clock clk 0.5 $prim_inputs
+
+# 3) Drive Strength Inputs are Equivalent to a ND2D2BWP gate from our library
+set_driving_cell -lib_cell ND2D2BWP -from_pin A1 -library tcbn401pbwtc $prim_inputs
+set_drive 0.1 rst_n
+
+# 4) Output Delay = 0.5ns prior to next clock rise for all outputs
+set_output_delay –clock clk 0.5 [all_outputs]
+
+# 5) Output load = 0.1pF on all outputs
+set_load 0.1 [all_outputs]
+
+# Wireload mode = TSMC32K_Lowk_Conservative
+set_wire_load_model -name TSMC32K_Lowk_Conservative -library tcbn401pbwtc
+
+# Max transition time = 0.15ns
+ set_max_transisiton 0.15 [current_design]
+
+# Clock uncertainty = 0.10ns
+set_clock_uncertainty 0.10 clk
+
+# EXECUTION
+######################################################################################
+report_timing –delay min
+compile –map_effort medium
+report_timing –delay min
